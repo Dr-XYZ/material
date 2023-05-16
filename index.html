@@ -22,7 +22,22 @@
         <!-- 搜尋結果 -->
         <ul data-books></ul>
       </div>
-      
+      <button id="shareButton">分享</button>
+
+<script>
+// <!-- // JavaScript程式碼 -->
+document.getElementById("shareButton").addEventListener("click", function() {
+//   <!-- // 取得當前頁面的URL -->
+  var currentURL = window.location.href;
+
+//   <!-- // 分享到社交媒體平台的URL -->
+  var shareURL = "http://example.com/share?url=" + encodeURIComponent(currentURL);
+
+//   <!-- // 打開新視窗或跳轉到分享URL -->
+  window.open(shareURL);
+});
+
+</script>
       <script>
       // 讀取 CSV 文件並解析為對象陣列
       const books = [];
