@@ -41,7 +41,7 @@ document.getElementById("shareButton").addEventListener("click", function() {
       <script>
       // 讀取 CSV 文件並解析為對象陣列
       const books = [];
-      fetch('index.csv')
+      fetch('https://raw.githubusercontent.com/Dr-XYZ/material/main/index.csv')
         .then((response) => response.text())
         .then((csv) => {
           const rows = csv.trim().split('\n');
